@@ -49,7 +49,66 @@
       homeTitle: "Teleconsulta segura en minutos",
       homeSubtitle: "Conecta con especialistas por video, chat o consulta presencial.",
       findSpecialist: "Encontrar especialista",
-      urgentNow: "Consulta urgente ahora"
+      urgentNow: "Consulta urgente ahora",
+      searchTitle: "Búsqueda de especialistas",
+      searchByName: "Buscar por nombre",
+      allSpecialties: "Todas las especialidades",
+      videoConsultation: "Videoconsulta",
+      onsite: "Presencial",
+      search: "Buscar",
+      viewProfile: "Ver perfil",
+      bookNow: "Agendar ahora",
+      book: "Agendar",
+      availability: "Disponibilidad",
+      available: "Disponible",
+      booking3steps: "Agendamiento en 3 pasos",
+      step1: "Paso 1",
+      step2: "Paso 2",
+      step3: "Paso 3",
+      name: "Nombre",
+      reason: "Motivo",
+      confirmAppointment: "Confirmar cita",
+      selectDateTime: "Selecciona fecha y hora",
+      generalConsultation: "Consulta general",
+      appointmentConfirmed: "Cita confirmada",
+      consultationRoom: "Sala de videoconsulta",
+      enter: "Entrar",
+      patient: "Paciente",
+      medicalChat: "Chat médico",
+      chatGreeting: "Hola, ¿cómo te sientes hoy?",
+      writeMessage: "Escribe tu mensaje...",
+      attach: "Adjuntar",
+      send: "Enviar",
+      memberships: "Membresías",
+      freePatient: "Gratuito paciente",
+      basicDoctor: "Básico médico",
+      premiumDoctor: "Premium médico",
+      featured: "Destacado",
+      clinicHospital: "Clínica / Hospital",
+      customPricing: "Precio personalizado",
+      requestDemo: "Solicitar demo",
+      patientPanel: "Panel del paciente",
+      upcomingAppointments: "Próximas citas",
+      viewMyHistory: "Ver mi historia",
+      scheduleNewAppointment: "Agendar nueva cita",
+      myUpcomingAppointments: "Mis próximas citas",
+      cancel: "Cancelar",
+      reschedule: "Reprogramar",
+      noAppointments: "Sin citas",
+      newDatePrompt: "Nueva fecha/hora (YYYY-MM-DDTHH:mm)",
+      monthlyConsults: "Consultas por mes",
+      doctorPanel: "Panel del médico",
+      activeAppointments: "Citas activas",
+      manageAgenda: "Gestionar agenda",
+      viewAssignedPatients: "Ver pacientes asignados",
+      consults: "Consultas",
+      patientsTitle: "Mis pacientes",
+      searchPatientByName: "Buscar paciente por nombre",
+      record: "Historia",
+      lastDiagnosis: "Último diagnóstico",
+      lastUpdate: "Última actualización",
+      viewHistory: "Ver historia",
+      noData: "N/A"
     },
     en: {
       login: "Login",
@@ -78,7 +137,66 @@
       homeTitle: "Secure teleconsultation in minutes",
       homeSubtitle: "Connect with specialists by video, chat, or in-person consultation.",
       findSpecialist: "Find specialist",
-      urgentNow: "Urgent consultation now"
+      urgentNow: "Urgent consultation now",
+      searchTitle: "Specialist search",
+      searchByName: "Search by name",
+      allSpecialties: "All specialties",
+      videoConsultation: "Video consultation",
+      onsite: "In-person",
+      search: "Search",
+      viewProfile: "View profile",
+      bookNow: "Book now",
+      book: "Book",
+      availability: "Availability",
+      available: "Available",
+      booking3steps: "Booking in 3 steps",
+      step1: "Step 1",
+      step2: "Step 2",
+      step3: "Step 3",
+      name: "Name",
+      reason: "Reason",
+      confirmAppointment: "Confirm appointment",
+      selectDateTime: "Select date and time",
+      generalConsultation: "General consultation",
+      appointmentConfirmed: "Appointment confirmed",
+      consultationRoom: "Video consultation room",
+      enter: "Enter",
+      patient: "Patient",
+      medicalChat: "Medical chat",
+      chatGreeting: "Hello, how are you feeling today?",
+      writeMessage: "Write your message...",
+      attach: "Attach",
+      send: "Send",
+      memberships: "Memberships",
+      freePatient: "Free patient",
+      basicDoctor: "Basic doctor",
+      premiumDoctor: "Premium doctor",
+      featured: "Featured",
+      clinicHospital: "Clinic / Hospital",
+      customPricing: "Custom pricing",
+      requestDemo: "Request demo",
+      patientPanel: "Patient panel",
+      upcomingAppointments: "Upcoming appointments",
+      viewMyHistory: "View my record",
+      scheduleNewAppointment: "Schedule new appointment",
+      myUpcomingAppointments: "My upcoming appointments",
+      cancel: "Cancel",
+      reschedule: "Reschedule",
+      noAppointments: "No appointments",
+      newDatePrompt: "New date/time (YYYY-MM-DDTHH:mm)",
+      monthlyConsults: "Consultations per month",
+      doctorPanel: "Doctor panel",
+      activeAppointments: "Active appointments",
+      manageAgenda: "Manage agenda",
+      viewAssignedPatients: "View assigned patients",
+      consults: "Consultations",
+      patientsTitle: "My patients",
+      searchPatientByName: "Search patient by name",
+      record: "Record",
+      lastDiagnosis: "Last diagnosis",
+      lastUpdate: "Last update",
+      viewHistory: "View record",
+      noData: "N/A"
     },
     pt: {
       login: "Entrar",
@@ -107,7 +225,66 @@
       homeTitle: "Teleconsulta segura em minutos",
       homeSubtitle: "Conecte-se com especialistas por vídeo, chat ou consulta presencial.",
       findSpecialist: "Encontrar especialista",
-      urgentNow: "Consulta urgente agora"
+      urgentNow: "Consulta urgente agora",
+      searchTitle: "Busca de especialistas",
+      searchByName: "Buscar por nome",
+      allSpecialties: "Todas as especialidades",
+      videoConsultation: "Videoconsulta",
+      onsite: "Presencial",
+      search: "Buscar",
+      viewProfile: "Ver perfil",
+      bookNow: "Agendar agora",
+      book: "Agendar",
+      availability: "Disponibilidade",
+      available: "Disponível",
+      booking3steps: "Agendamento em 3 passos",
+      step1: "Passo 1",
+      step2: "Passo 2",
+      step3: "Passo 3",
+      name: "Nome",
+      reason: "Motivo",
+      confirmAppointment: "Confirmar consulta",
+      selectDateTime: "Selecione data e hora",
+      generalConsultation: "Consulta geral",
+      appointmentConfirmed: "Consulta confirmada",
+      consultationRoom: "Sala de videoconsulta",
+      enter: "Entrar",
+      patient: "Paciente",
+      medicalChat: "Chat médico",
+      chatGreeting: "Olá, como você está se sentindo hoje?",
+      writeMessage: "Escreva sua mensagem...",
+      attach: "Anexar",
+      send: "Enviar",
+      memberships: "Assinaturas",
+      freePatient: "Paciente gratuito",
+      basicDoctor: "Médico básico",
+      premiumDoctor: "Médico premium",
+      featured: "Destaque",
+      clinicHospital: "Clínica / Hospital",
+      customPricing: "Preço personalizado",
+      requestDemo: "Solicitar demo",
+      patientPanel: "Painel do paciente",
+      upcomingAppointments: "Próximas consultas",
+      viewMyHistory: "Ver meu histórico",
+      scheduleNewAppointment: "Agendar nova consulta",
+      myUpcomingAppointments: "Minhas próximas consultas",
+      cancel: "Cancelar",
+      reschedule: "Reagendar",
+      noAppointments: "Sem consultas",
+      newDatePrompt: "Nova data/hora (YYYY-MM-DDTHH:mm)",
+      monthlyConsults: "Consultas por mês",
+      doctorPanel: "Painel do médico",
+      activeAppointments: "Consultas ativas",
+      manageAgenda: "Gerenciar agenda",
+      viewAssignedPatients: "Ver pacientes atribuídos",
+      consults: "Consultas",
+      patientsTitle: "Meus pacientes",
+      searchPatientByName: "Buscar paciente por nome",
+      record: "Histórico",
+      lastDiagnosis: "Último diagnóstico",
+      lastUpdate: "Última atualização",
+      viewHistory: "Ver histórico",
+      noData: "N/A"
     }
   };
 
@@ -437,20 +614,20 @@
     const list = getSpecialists();
     view.innerHTML = `
       <section class="card">
-        <h2 class="section-title">Búsqueda de especialistas</h2>
+        <h2 class="section-title">${tr("searchTitle")}</h2>
         <div class="grid grid-3">
-          <input id="f-nombre" placeholder="Buscar por nombre" />
+          <input id="f-nombre" placeholder="${tr("searchByName")}" />
           <select id="f-especialidad">
-            <option value="all">Todas las especialidades</option>
+            <option value="all">${tr("allSpecialties")}</option>
             ${[...new Set(list.map((s) => s.specialty))].map((s) => `<option value="${s}">${s}</option>`).join("")}
           </select>
           <select id="f-tipo">
-            <option value="video">Videoconsulta</option>
-            <option value="chat">Chat</option>
-            <option value="presencial">Presencial</option>
+            <option value="video">${tr("videoConsultation")}</option>
+            <option value="chat">${tr("chat")}</option>
+            <option value="presencial">${tr("onsite")}</option>
           </select>
         </div>
-        <button class="btn-primary" id="do-search" style="margin-top:0.7rem;">Buscar</button>
+        <button class="btn-primary" id="do-search" style="margin-top:0.7rem;">${tr("search")}</button>
       </section>
       <section id="search-results" class="grid grid-3" style="margin-top:1rem;"></section>
     `;
@@ -480,8 +657,8 @@
             <p>${sp.bio}</p>
             <p><strong>${formatCOP(sp.price)}</strong></p>
             <div class="inline-actions">
-              <button class="btn-outline" data-profile="${sp.id}">Ver perfil</button>
-              <button class="btn-primary" data-book="${sp.id}">Agendar ahora</button>
+              <button class="btn-outline" data-profile="${sp.id}">${tr("viewProfile")}</button>
+              <button class="btn-primary" data-book="${sp.id}">${tr("bookNow")}</button>
             </div>
           </article>
         `
@@ -525,9 +702,9 @@
             <div><h2 class="section-title" style="margin:0;">${sp.fullName}</h2><p>${sp.specialty}</p></div>
           </div>
           <p>${sp.bio}</p>
-          <button class="btn-primary" id="go-book">Agendar</button>
+          <button class="btn-primary" id="go-book">${tr("book")}</button>
         </article>
-        <article class="card"><h3 class="section-title">Disponibilidad</h3><div id="profile-calendar" style="min-height:420px;"></div></article>
+        <article class="card"><h3 class="section-title">${tr("availability")}</h3><div id="profile-calendar" style="min-height:420px;"></div></article>
       </section>
     `;
 
@@ -547,12 +724,12 @@
     for (let i = 1; i <= 10; i += 1) {
       const start = new Date(now.getTime() + i * 86400000);
       start.setHours(9, 0, 0, 0);
-      events.push({ title: "Disponible", start: start.toISOString(), end: new Date(start.getTime() + 1800000).toISOString(), backgroundColor: "#16a34a" });
+  events.push({ title: tr("available"), start: start.toISOString(), end: new Date(start.getTime() + 1800000).toISOString(), backgroundColor: "#16a34a" });
     }
 
     state.activeCalendar = new FullCalendar.Calendar(el, {
       initialView: "timeGridWeek",
-      locale: "es",
+  locale: state.lang,
       allDaySlot: false,
       events,
       eventClick: (info) => {
@@ -569,27 +746,27 @@
     const sp = findSelectedSpecialist();
     view.innerHTML = `
       <section class="card">
-        <h2 class="section-title">Agendamiento en 3 pasos</h2>
+        <h2 class="section-title">${tr("booking3steps")}</h2>
         <div class="grid grid-3">
           <article class="card">
-            <strong>Paso 1</strong>
-            <select id="a-type" style="margin-top:0.5rem;"><option value="video">Videoconsulta</option><option value="chat">Chat</option><option value="presencial">Presencial</option></select>
+            <strong>${tr("step1")}</strong>
+            <select id="a-type" style="margin-top:0.5rem;"><option value="video">${tr("videoConsultation")}</option><option value="chat">${tr("chat")}</option><option value="presencial">${tr("onsite")}</option></select>
             <input id="a-date" type="datetime-local" value="${(state.selectedSlot || new Date(Date.now() + 86400000).toISOString()).slice(0, 16)}" style="margin-top:0.5rem;" />
           </article>
           <article class="card">
-            <strong>Paso 2</strong>
-            <input id="a-name" value="${user?.nombre || ""}" placeholder="Nombre" style="margin-top:0.5rem;" />
-            <input id="a-email" value="${user?.email || ""}" placeholder="Email" style="margin-top:0.5rem;" />
-            <textarea id="a-reason" rows="3" placeholder="Motivo" style="margin-top:0.5rem;"></textarea>
+            <strong>${tr("step2")}</strong>
+            <input id="a-name" value="${user?.nombre || ""}" placeholder="${tr("name")}" style="margin-top:0.5rem;" />
+            <input id="a-email" value="${user?.email || ""}" placeholder="${tr("email")}" style="margin-top:0.5rem;" />
+            <textarea id="a-reason" rows="3" placeholder="${tr("reason")}" style="margin-top:0.5rem;"></textarea>
           </article>
-          <article class="card"><strong>Paso 3</strong><p>${sp.fullName}</p><p>${formatCOP(sp.price)}</p><button class="btn-primary" id="confirm-book">Confirmar cita</button></article>
+          <article class="card"><strong>${tr("step3")}</strong><p>${sp.fullName}</p><p>${formatCOP(sp.price)}</p><button class="btn-primary" id="confirm-book">${tr("confirmAppointment")}</button></article>
         </div>
       </section>
     `;
 
     view.querySelector("#confirm-book").addEventListener("click", () => {
       const dt = view.querySelector("#a-date").value;
-      if (!dt) return showToast("Selecciona fecha y hora");
+  if (!dt) return showToast(tr("selectDateTime"));
       const type = view.querySelector("#a-type").value;
       const reason = view.querySelector("#a-reason").value.trim();
       const start = new Date(dt);
@@ -604,13 +781,13 @@
         fechaInicio: start.toISOString(),
         fechaFin: new Date(start.getTime() + 1800000).toISOString(),
         tipo: type,
-        motivo: reason || "Consulta general",
+        motivo: reason || tr("generalConsultation"),
         estado: "confirmada"
       });
       agendaApi.saveCitas(citas);
 
       state.appointment = { specialist: sp, roomName: `MediConnect-${sp.fullName.replace(/\W+/g, "")}-${Date.now()}`, patientName: user.nombre };
-      showToast("Cita confirmada");
+  showToast(tr("appointmentConfirmed"));
       location.hash = type === "video" ? "#/consulta" : type === "chat" ? "#/chat" : "#/panel";
     });
   }
@@ -619,15 +796,15 @@
     const view = document.getElementById("view");
     const appointment = state.appointment;
     view.innerHTML = `
-      <section class="card"><h2 class="section-title">Sala de videoconsulta</h2><div class="countdown" id="w-count">00:20</div><button class="btn-primary" id="start-video" disabled>Entrar</button></section>
+      <section class="card"><h2 class="section-title">${tr("consultationRoom")}</h2><div class="countdown" id="w-count">00:20</div><button class="btn-primary" id="start-video" disabled>${tr("enter")}</button></section>
       <section class="card" style="margin-top:1rem;"><div id="jitsi-container"></div></section>
     `;
     startCountdown(20, "w-count", () => (view.querySelector("#start-video").disabled = false));
-    view.querySelector("#start-video").addEventListener("click", () => mountJitsi("jitsi-container", appointment?.roomName || `MediConnect-Demo-${Date.now()}`, appointment?.patientName || "Paciente"));
+    view.querySelector("#start-video").addEventListener("click", () => mountJitsi("jitsi-container", appointment?.roomName || `MediConnect-Demo-${Date.now()}`, appointment?.patientName || tr("patient")));
   }
 
   function renderChat() {
-    document.getElementById("view").innerHTML = `<section class="card"><h2 class="section-title">Chat médico</h2><div class="messages" id="chat-msgs"><div class="message from-doctor">Hola, ¿cómo te sientes hoy?<small>09:00</small></div></div><div class="chat-compose"><input id="chat-input" placeholder="Escribe tu mensaje..."/><label class="btn-outline" style="display:inline-flex;align-items:center;justify-content:center;">Adjuntar<input type="file" hidden /></label><button class="btn-primary" id="chat-send">Enviar</button></div></section>`;
+  document.getElementById("view").innerHTML = `<section class="card"><h2 class="section-title">${tr("medicalChat")}</h2><div class="messages" id="chat-msgs"><div class="message from-doctor">${tr("chatGreeting")}<small>09:00</small></div></div><div class="chat-compose"><input id="chat-input" placeholder="${tr("writeMessage")}"/><label class="btn-outline" style="display:inline-flex;align-items:center;justify-content:center;">${tr("attach")}<input type="file" hidden /></label><button class="btn-primary" id="chat-send">${tr("send")}</button></div></section>`;
     document.getElementById("chat-send").addEventListener("click", () => {
       const input = document.getElementById("chat-input");
       if (!input.value.trim()) return;
@@ -637,19 +814,19 @@
   }
 
   function renderUrgencias() {
-    document.getElementById("view").innerHTML = `<section class="card"><h2 class="section-title">Urgencias</h2><div class="countdown" id="urgent-count">04:00</div><button class="btn-danger" id="launch-urgent">Lanzar consulta urgente</button></section><section class="card" style="margin-top:1rem;"><div id="urgent-jitsi-container"></div></section>`;
+  document.getElementById("view").innerHTML = `<section class="card"><h2 class="section-title">${tr("urgent")}</h2><div class="countdown" id="urgent-count">04:00</div><button class="btn-danger" id="launch-urgent">${tr("urgentNow")}</button></section><section class="card" style="margin-top:1rem;"><div id="urgent-jitsi-container"></div></section>`;
     startCountdown(240, "urgent-count");
-    document.getElementById("launch-urgent").addEventListener("click", () => mountJitsi("urgent-jitsi-container", `MediConnect-Guardia-${Date.now()}`, "Paciente urgente"));
+    document.getElementById("launch-urgent").addEventListener("click", () => mountJitsi("urgent-jitsi-container", `MediConnect-Guardia-${Date.now()}`, `${tr("patient")} ${tr("urgent")}`));
   }
 
   function renderPlanes() {
-    document.getElementById("view").innerHTML = `<section class="card"><h2 class="section-title">Membresías</h2><div class="grid grid-2"><article class="card"><h3>Gratuito paciente</h3><p><strong>${formatCOP(0)}</strong>/mes</p></article><article class="card"><h3>Básico médico</h3><p><strong>${formatCOP(150000)}</strong>/mes</p></article><article class="card plan-premium"><h3>Premium médico</h3><p><strong>${formatCOP(280000)}</strong>/mes</p><span class="badge success">Destacado</span></article><article class="card"><h3>Clínica / Hospital</h3><p><strong>Precio personalizado</strong></p><button class="btn-outline">Solicitar demo</button></article></div></section><section class="card" style="margin-top:1rem;"><canvas id="plan-chart"></canvas></section>`;
-    state.chartInstances.push(new Chart(document.getElementById("plan-chart"), { type: "doughnut", data: { labels: ["Paciente", "Básico", "Premium", "Clínica"], datasets: [{ data: [52, 22, 18, 8], backgroundColor: ["#bfdbfe", "#60a5fa", "#1a73e8", "#1e3a8a"] }] } }));
+    document.getElementById("view").innerHTML = `<section class="card"><h2 class="section-title">${tr("memberships")}</h2><div class="grid grid-2"><article class="card"><h3>${tr("freePatient")}</h3><p><strong>${formatCOP(0)}</strong>/mes</p></article><article class="card"><h3>${tr("basicDoctor")}</h3><p><strong>${formatCOP(150000)}</strong>/mes</p></article><article class="card plan-premium"><h3>${tr("premiumDoctor")}</h3><p><strong>${formatCOP(280000)}</strong>/mes</p><span class="badge success">${tr("featured")}</span></article><article class="card"><h3>${tr("clinicHospital")}</h3><p><strong>${tr("customPricing")}</strong></p><button class="btn-outline">${tr("requestDemo")}</button></article></div></section><section class="card" style="margin-top:1rem;"><canvas id="plan-chart"></canvas></section>`;
+    state.chartInstances.push(new Chart(document.getElementById("plan-chart"), { type: "doughnut", data: { labels: [tr("freePatient"), tr("basicDoctor"), tr("premiumDoctor"), tr("clinicHospital")], datasets: [{ data: [52, 22, 18, 8], backgroundColor: ["#bfdbfe", "#60a5fa", "#1a73e8", "#1e3a8a"] }] } }));
   }
 
   function renderPanelPaciente(user) {
-    const citas = agendaApi.getCitas().filter((c) => c.pacienteId === user.id && c.estado !== "cancelada");
-    document.getElementById("view").innerHTML = `<section class="card"><h2 class="section-title">Panel del paciente</h2><p>Próximas citas: <strong>${citas.length}</strong></p><div class="inline-actions"><a class="btn-outline" href="#/mi-historia">Ver mi historia</a><a class="btn-outline" href="#/buscar">Agendar nueva cita</a></div></section><section class="card" style="margin-top:1rem;"><h3>Mis próximas citas</h3>${citas.map((c) => `<div class="card" style="margin-bottom:0.5rem;"><strong>${new Date(c.fechaInicio).toLocaleString()}</strong> · ${c.medicoNombre} · ${c.tipo} · ${c.estado}<div class="inline-actions" style="margin-top:0.4rem;"><button class="btn-outline" data-cancel-cita="${c.id}">Cancelar</button><button class="btn-outline" data-reschedule-cita="${c.id}">Reprogramar</button></div></div>`).join("") || "<p>Sin citas</p>"}</section><section class="grid grid-2" style="margin-top:1rem;"><article class="card"><canvas id="patient-line"></canvas></article><article class="card"><div id="clinic-map" style="height:300px;"></div></article></section>`;
+  const citas = agendaApi.getCitas().filter((c) => c.pacienteId === user.id && c.estado !== "cancelada");
+  document.getElementById("view").innerHTML = `<section class="card"><h2 class="section-title">${tr("patientPanel")}</h2><p>${tr("upcomingAppointments")}: <strong>${citas.length}</strong></p><div class="inline-actions"><a class="btn-outline" href="#/mi-historia">${tr("viewMyHistory")}</a><a class="btn-outline" href="#/buscar">${tr("scheduleNewAppointment")}</a></div></section><section class="card" style="margin-top:1rem;"><h3>${tr("myUpcomingAppointments")}</h3>${citas.map((c) => `<div class="card" style="margin-bottom:0.5rem;"><strong>${new Date(c.fechaInicio).toLocaleString()}</strong> · ${c.medicoNombre} · ${c.tipo} · ${c.estado}<div class="inline-actions" style="margin-top:0.4rem;"><button class="btn-outline" data-cancel-cita="${c.id}">${tr("cancel")}</button><button class="btn-outline" data-reschedule-cita="${c.id}">${tr("reschedule")}</button></div></div>`).join("") || `<p>${tr("noAppointments")}</p>`}</section><section class="grid grid-2" style="margin-top:1rem;"><article class="card"><canvas id="patient-line"></canvas></article><article class="card"><div id="clinic-map" style="height:300px;"></div></article></section>`;
 
     document.querySelectorAll("[data-cancel-cita]").forEach((btn) => {
       btn.addEventListener("click", () => {
@@ -664,7 +841,7 @@
 
     document.querySelectorAll("[data-reschedule-cita]").forEach((btn) => {
       btn.addEventListener("click", () => {
-        const newDate = prompt("Nueva fecha/hora (YYYY-MM-DDTHH:mm)");
+  const newDate = prompt(tr("newDatePrompt"));
         if (!newDate) return;
         const all = agendaApi.getCitas();
         const cita = all.find((x) => x.id === btn.dataset.rescheduleCita && x.pacienteId === user.id);
@@ -678,7 +855,7 @@
       });
     });
 
-    state.chartInstances.push(new Chart(document.getElementById("patient-line"), { type: "line", data: { labels: ["Ene", "Feb", "Mar", "Abr", "May", "Jun"], datasets: [{ label: "Consultas por mes", data: [2, 3, 4, 3, 5, 6], borderColor: "#1a73e8" }] } }));
+  state.chartInstances.push(new Chart(document.getElementById("patient-line"), { type: "line", data: { labels: ["Ene", "Feb", "Mar", "Abr", "May", "Jun"], datasets: [{ label: tr("monthlyConsults"), data: [2, 3, 4, 3, 5, 6], borderColor: "#1a73e8" }] } }));
     state.mapInstance = L.map("clinic-map").setView([4.711, -74.0721], 12);
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", { attribution: "&copy; OpenStreetMap" }).addTo(state.mapInstance);
     [[4.741, -74.05, "Clínica Norte"], [4.648, -74.062, "Consultorio Chapinero"], [4.667, -74.11, "Centro Médico Salitre"]].forEach((c) => L.marker([c[0], c[1]]).addTo(state.mapInstance).bindPopup(c[2]));
@@ -686,9 +863,9 @@
 
   function renderPanelMedico(user) {
     const citas = agendaApi.getCitas().filter((c) => c.medicoId === user.id && c.estado !== "cancelada");
-    document.getElementById("view").innerHTML = `<section class="card"><h2 class="section-title">Panel del médico</h2><p>Citas activas: <strong>${citas.length}</strong></p><div class="inline-actions"><a class="btn-outline" href="#/mi-agenda">Gestionar agenda</a><a class="btn-outline" href="#/mis-pacientes">Ver pacientes asignados</a></div></section><section class="grid grid-2" style="margin-top:1rem;"><article class="card"><canvas id="doctor-line"></canvas></article><article class="card"><canvas id="doctor-donut"></canvas></article></section>`;
-    state.chartInstances.push(new Chart(document.getElementById("doctor-line"), { type: "line", data: { labels: ["Ene", "Feb", "Mar", "Abr", "May"], datasets: [{ label: "Consultas", data: [18, 22, 21, 28, 31], borderColor: "#1a73e8" }] } }));
-    state.chartInstances.push(new Chart(document.getElementById("doctor-donut"), { type: "doughnut", data: { labels: ["Video", "Chat", "Presencial"], datasets: [{ data: [65, 20, 15], backgroundColor: ["#1a73e8", "#60a5fa", "#bfdbfe"] }] } }));
+    document.getElementById("view").innerHTML = `<section class="card"><h2 class="section-title">${tr("doctorPanel")}</h2><p>${tr("activeAppointments")}: <strong>${citas.length}</strong></p><div class="inline-actions"><a class="btn-outline" href="#/mi-agenda">${tr("manageAgenda")}</a><a class="btn-outline" href="#/mis-pacientes">${tr("viewAssignedPatients")}</a></div></section><section class="grid grid-2" style="margin-top:1rem;"><article class="card"><canvas id="doctor-line"></canvas></article><article class="card"><canvas id="doctor-donut"></canvas></article></section>`;
+    state.chartInstances.push(new Chart(document.getElementById("doctor-line"), { type: "line", data: { labels: ["Ene", "Feb", "Mar", "Abr", "May"], datasets: [{ label: tr("consults"), data: [18, 22, 21, 28, 31], borderColor: "#1a73e8" }] } }));
+    state.chartInstances.push(new Chart(document.getElementById("doctor-donut"), { type: "doughnut", data: { labels: [tr("videoConsultation"), tr("chat"), tr("onsite")], datasets: [{ data: [65, 20, 15], backgroundColor: ["#1a73e8", "#60a5fa", "#bfdbfe"] }] } }));
   }
 
   function renderMisPacientes(user) {
@@ -696,12 +873,12 @@
     const historias = historiaApi.getHistorias();
     const patients = (user.rol === "admin" ? historias : historias.filter((h) => rolesApi.isAssignedDoctor(user, h.pacienteId))).map((h) => ({ ...h, lastDx: historiaApi.getLatestDiagnosis(h) }));
 
-    view.innerHTML = `<section class="card"><h2 class="section-title">Mis pacientes</h2><input id="p-search" placeholder="Buscar paciente por nombre" /></section><section id="patients-grid" class="grid grid-3" style="margin-top:1rem;"></section>`;
+  view.innerHTML = `<section class="card"><h2 class="section-title">${tr("patientsTitle")}</h2><input id="p-search" placeholder="${tr("searchPatientByName")}" /></section><section id="patients-grid" class="grid grid-3" style="margin-top:1rem;"></section>`;
     const draw = () => {
       const q = view.querySelector("#p-search").value.toLowerCase().trim();
       const list = q ? patients.filter((p) => p.pacienteNombre.toLowerCase().includes(q)) : patients;
       const grid = view.querySelector("#patients-grid");
-      grid.innerHTML = list.map((p) => `<article class="card"><div class="specialist-head"><img class="avatar" src="${getAvatar(p.pacienteNombre)}" alt="${p.pacienteNombre}" /><div><strong>${p.pacienteNombre}</strong><div>Historia #${p.id}</div></div></div><p><strong>Último diagnóstico:</strong> ${p.lastDx}</p><p><strong>Última actualización:</strong> ${p.ultimaActualizacion || "N/A"}</p><button class="btn-primary" data-view-history="${p.pacienteId}">Ver historia</button></article>`).join("");
+  grid.innerHTML = list.map((p) => `<article class="card"><div class="specialist-head"><img class="avatar" src="${getAvatar(p.pacienteNombre)}" alt="${p.pacienteNombre}" /><div><strong>${p.pacienteNombre}</strong><div>${tr("record")} #${p.id}</div></div></div><p><strong>${tr("lastDiagnosis")}:</strong> ${p.lastDx}</p><p><strong>${tr("lastUpdate")}:</strong> ${p.ultimaActualizacion || tr("noData")}</p><button class="btn-primary" data-view-history="${p.pacienteId}">${tr("viewHistory")}</button></article>`).join("");
       grid.querySelectorAll("[data-view-history]").forEach((btn) => btn.addEventListener("click", () => (location.hash = `#/historia/${btn.dataset.viewHistory}`)));
     };
     view.querySelector("#p-search").addEventListener("input", draw);
