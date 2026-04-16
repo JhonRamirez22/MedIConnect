@@ -5,6 +5,207 @@ const rolesApi = window.MCRoles;
 const historiaApi = window.MCHistoria;
 const agendaApi = window.MCAgenda;
 
+function currentLang() {
+  return localStorage.getItem("mediconnect_lang") || "es";
+}
+
+const ADMIN_I18N = {
+  es: {
+    adminPanel: "Panel de administración",
+    patients: "Pacientes",
+    doctors: "Médicos",
+    admins: "Admins",
+    monthConsults: "Consultas del mes",
+    activeSpecialties: "Especialidades activas",
+    consultsBySpecialty: "Consultas por especialidad",
+    consults: "Consultas",
+    userManagement: "Gestión de usuarios",
+    newUser: "Nuevo usuario",
+    createUser: "Crear nuevo usuario",
+    name: "Nombre",
+    email: "Email",
+    tempPassword: "Contraseña temporal",
+    patient: "Paciente",
+    doctor: "Médico",
+    save: "Guardar",
+    currentRole: "Rol actual",
+    status: "Estado",
+    actions: "Acciones",
+    inactive: "Inactivo",
+    active: "Activo",
+    enable: "Activar",
+    disable: "Desactivar",
+    viewClinicalRecord: "Ver historia clínica",
+    viewAgenda: "Ver agenda",
+    fillRequired: "Completa nombre, email y contraseña",
+    userCreated: "Usuario creado",
+    confirmRoleChange: "¿Estás seguro de cambiar el rol de {{name}} a {{role}}?",
+    roleUpdated: "Rol actualizado",
+    accountUpdated: "Estado de cuenta actualizado",
+    noPatientRecord: "Este usuario no tiene historia clínica de paciente",
+    noDoctorAgenda: "Este usuario no tiene agenda médica",
+    specialtyManagement: "Gestión de especialidades",
+    icon: "Icono",
+    activeF: "Activa",
+    inactiveF: "Inactiva",
+    addSpecialty: "Agregar especialidad",
+    specialtyName: "Nombre de especialidad",
+    specialtyIcon: "Icono Lucide (ej. stethoscope)",
+    add: "Agregar",
+    specialtyUpdated: "Especialidad actualizada",
+    specialtyNameRequired: "Ingresa un nombre de especialidad",
+    specialtyAdded: "Especialidad agregada"
+  },
+  en: {
+    adminPanel: "Administration panel",
+    patients: "Patients",
+    doctors: "Doctors",
+    admins: "Admins",
+    monthConsults: "Consultations this month",
+    activeSpecialties: "Active specialties",
+    consultsBySpecialty: "Consultations by specialty",
+    consults: "Consultations",
+    userManagement: "User management",
+    newUser: "New user",
+    createUser: "Create new user",
+    name: "Name",
+    email: "Email",
+    tempPassword: "Temporary password",
+    patient: "Patient",
+    doctor: "Doctor",
+    save: "Save",
+    currentRole: "Current role",
+    status: "Status",
+    actions: "Actions",
+    inactive: "Inactive",
+    active: "Active",
+    enable: "Enable",
+    disable: "Disable",
+    viewClinicalRecord: "View clinical record",
+    viewAgenda: "View agenda",
+    fillRequired: "Complete name, email and password",
+    userCreated: "User created",
+    confirmRoleChange: "Are you sure you want to change {{name}}'s role to {{role}}?",
+    roleUpdated: "Role updated",
+    accountUpdated: "Account status updated",
+    noPatientRecord: "This user has no patient clinical record",
+    noDoctorAgenda: "This user has no medical agenda",
+    specialtyManagement: "Specialty management",
+    icon: "Icon",
+    activeF: "Active",
+    inactiveF: "Inactive",
+    addSpecialty: "Add specialty",
+    specialtyName: "Specialty name",
+    specialtyIcon: "Lucide icon (e.g. stethoscope)",
+    add: "Add",
+    specialtyUpdated: "Specialty updated",
+    specialtyNameRequired: "Enter a specialty name",
+    specialtyAdded: "Specialty added"
+  },
+  pt: {
+    adminPanel: "Painel de administração",
+    patients: "Pacientes",
+    doctors: "Médicos",
+    admins: "Admins",
+    monthConsults: "Consultas do mês",
+    activeSpecialties: "Especialidades ativas",
+    consultsBySpecialty: "Consultas por especialidade",
+    consults: "Consultas",
+    userManagement: "Gestão de usuários",
+    newUser: "Novo usuário",
+    createUser: "Criar novo usuário",
+    name: "Nome",
+    email: "E-mail",
+    tempPassword: "Senha temporária",
+    patient: "Paciente",
+    doctor: "Médico",
+    save: "Salvar",
+    currentRole: "Função atual",
+    status: "Status",
+    actions: "Ações",
+    inactive: "Inativo",
+    active: "Ativo",
+    enable: "Ativar",
+    disable: "Desativar",
+    viewClinicalRecord: "Ver prontuário",
+    viewAgenda: "Ver agenda",
+    fillRequired: "Preencha nome, e-mail e senha",
+    userCreated: "Usuário criado",
+    confirmRoleChange: "Tem certeza que deseja alterar a função de {{name}} para {{role}}?",
+    roleUpdated: "Função atualizada",
+    accountUpdated: "Status da conta atualizado",
+    noPatientRecord: "Este usuário não possui prontuário de paciente",
+    noDoctorAgenda: "Este usuário não possui agenda médica",
+    specialtyManagement: "Gestão de especialidades",
+    icon: "Ícone",
+    activeF: "Ativa",
+    inactiveF: "Inativa",
+    addSpecialty: "Adicionar especialidade",
+    specialtyName: "Nome da especialidade",
+    specialtyIcon: "Ícone Lucide (ex. stethoscope)",
+    add: "Adicionar",
+    specialtyUpdated: "Especialidade atualizada",
+    specialtyNameRequired: "Informe o nome da especialidade",
+    specialtyAdded: "Especialidade adicionada"
+  }
+};
+
+ADMIN_I18N.de = { ...ADMIN_I18N.en };
+ADMIN_I18N.it = { ...ADMIN_I18N.en };
+ADMIN_I18N.pl = { ...ADMIN_I18N.en };
+ADMIN_I18N.tr = {
+  adminPanel: "Yönetim paneli",
+  patients: "Hastalar",
+  doctors: "Doktorlar",
+  admins: "Yöneticiler",
+  monthConsults: "Bu ayki konsültasyonlar",
+  activeSpecialties: "Aktif uzmanlıklar",
+  consultsBySpecialty: "Uzmanlığa göre konsültasyonlar",
+  consults: "Konsültasyonlar",
+  userManagement: "Kullanıcı yönetimi",
+  newUser: "Yeni kullanıcı",
+  createUser: "Yeni kullanıcı oluştur",
+  name: "Ad",
+  email: "E-posta",
+  tempPassword: "Geçici şifre",
+  patient: "Hasta",
+  doctor: "Doktor",
+  save: "Kaydet",
+  currentRole: "Mevcut rol",
+  status: "Durum",
+  actions: "İşlemler",
+  inactive: "Pasif",
+  active: "Aktif",
+  enable: "Etkinleştir",
+  disable: "Devre dışı bırak",
+  viewClinicalRecord: "Klinik geçmişi görüntüle",
+  viewAgenda: "Ajandayı görüntüle",
+  fillRequired: "Ad, e-posta ve şifre alanlarını doldurun",
+  userCreated: "Kullanıcı oluşturuldu",
+  confirmRoleChange: "{{name}} kullanıcısının rolünü {{role}} olarak değiştirmek istediğinize emin misiniz?",
+  roleUpdated: "Rol güncellendi",
+  accountUpdated: "Hesap durumu güncellendi",
+  noPatientRecord: "Bu kullanıcının hasta klinik geçmişi yok",
+  noDoctorAgenda: "Bu kullanıcının doktor ajandası yok",
+  specialtyManagement: "Uzmanlık yönetimi",
+  icon: "İkon",
+  activeF: "Aktif",
+  inactiveF: "Pasif",
+  addSpecialty: "Uzmanlık ekle",
+  specialtyName: "Uzmanlık adı",
+  specialtyIcon: "Lucide ikonu (örn. stethoscope)",
+  add: "Ekle",
+  specialtyUpdated: "Uzmanlık güncellendi",
+  specialtyNameRequired: "Uzmanlık adı girin",
+  specialtyAdded: "Uzmanlık eklendi"
+};
+
+function ta(key, vars = {}) {
+  const lang = currentLang();
+  const base = ADMIN_I18N[lang]?.[key] || ADMIN_I18N.es[key] || key;
+  return Object.entries(vars).reduce((acc, [k, v]) => acc.replace(`{{${k}}}`, String(v)), base);
+}
+
 function getEspecialidades() {
   return rolesApi.loadJSON(rolesApi.STORAGE_KEYS.especialidades, []);
 }
@@ -41,18 +242,18 @@ function renderAdminDashboard(container) {
 
   container.innerHTML = `
     <section class="card">
-      <h2 class="section-title">Panel de administración</h2>
+      <h2 class="section-title">${ta("adminPanel")}</h2>
       <div class="grid grid-3">
-        <article class="stat-box"><strong>${roles.pacientes}</strong><div>Pacientes</div></article>
-        <article class="stat-box"><strong>${roles.medicos}</strong><div>Médicos</div></article>
-        <article class="stat-box"><strong>${roles.admins}</strong><div>Admins</div></article>
-        <article class="stat-box"><strong>${citas.length}</strong><div>Consultas del mes</div></article>
-        <article class="stat-box"><strong>${especialidades}</strong><div>Especialidades activas</div></article>
+        <article class="stat-box"><strong>${roles.pacientes}</strong><div>${ta("patients")}</div></article>
+        <article class="stat-box"><strong>${roles.medicos}</strong><div>${ta("doctors")}</div></article>
+        <article class="stat-box"><strong>${roles.admins}</strong><div>${ta("admins")}</div></article>
+        <article class="stat-box"><strong>${citas.length}</strong><div>${ta("monthConsults")}</div></article>
+        <article class="stat-box"><strong>${especialidades}</strong><div>${ta("activeSpecialties")}</div></article>
       </div>
     </section>
 
     <section class="card" style="margin-top:1rem;">
-      <h3>Consultas por especialidad</h3>
+      <h3>${ta("consultsBySpecialty")}</h3>
       <canvas id="admin-especialidades-chart"></canvas>
     </section>
   `;
@@ -61,7 +262,7 @@ function renderAdminDashboard(container) {
     type: "bar",
     data: {
       labels: Object.keys(porEsp),
-      datasets: [{ label: "Consultas", data: Object.values(porEsp), backgroundColor: "#1a73e8" }]
+      datasets: [{ label: ta("consults"), data: Object.values(porEsp), backgroundColor: "#1a73e8" }]
     }
   });
 }
@@ -72,29 +273,29 @@ function renderAdminUsuarios(container, { toast, navigate }) {
   container.innerHTML = `
     <section class="card">
       <div style="display:flex; justify-content:space-between; align-items:center; gap:0.7rem; flex-wrap:wrap;">
-        <h2 class="section-title">Gestión de usuarios</h2>
-        <button class="btn-primary" id="btn-nuevo-usuario">Nuevo usuario</button>
+        <h2 class="section-title">${ta("userManagement")}</h2>
+        <button class="btn-primary" id="btn-nuevo-usuario">${ta("newUser")}</button>
       </div>
 
       <div id="new-user-box" class="card" style="display:none; margin:0.7rem 0;">
-        <h3>Crear nuevo usuario</h3>
+        <h3>${ta("createUser")}</h3>
         <div class="grid grid-2">
-          <input id="nu-nombre" placeholder="Nombre" />
-          <input id="nu-email" placeholder="Email" />
-          <input id="nu-pass" placeholder="Contraseña temporal" />
+          <input id="nu-nombre" placeholder="${ta("name")}" />
+          <input id="nu-email" placeholder="${ta("email")}" />
+          <input id="nu-pass" placeholder="${ta("tempPassword")}" />
           <select id="nu-rol">
-            <option value="paciente">Paciente</option>
-            <option value="medico">Médico</option>
+            <option value="paciente">${ta("patient")}</option>
+            <option value="medico">${ta("doctor")}</option>
             <option value="admin">Admin</option>
           </select>
         </div>
-        <button class="btn-primary" id="save-new-user" style="margin-top:0.6rem;">Guardar</button>
+        <button class="btn-primary" id="save-new-user" style="margin-top:0.6rem;">${ta("save")}</button>
       </div>
 
       <div class="table-wrap">
         <table>
           <thead>
-            <tr><th>Nombre</th><th>Email</th><th>Rol actual</th><th>Estado</th><th>Acciones</th></tr>
+            <tr><th>${ta("name")}</th><th>${ta("email")}</th><th>${ta("currentRole")}</th><th>${ta("status")}</th><th>${ta("actions")}</th></tr>
           </thead>
           <tbody>
             ${users
@@ -105,17 +306,17 @@ function renderAdminUsuarios(container, { toast, navigate }) {
                 <td>${u.email}</td>
                 <td>
                   <select data-role-user="${u.id}">
-                    <option value="paciente" ${u.rol === "paciente" ? "selected" : ""}>Paciente</option>
-                    <option value="medico" ${u.rol === "medico" ? "selected" : ""}>Médico</option>
+                    <option value="paciente" ${u.rol === "paciente" ? "selected" : ""}>${ta("patient")}</option>
+                    <option value="medico" ${u.rol === "medico" ? "selected" : ""}>${ta("doctor")}</option>
                     <option value="admin" ${u.rol === "admin" ? "selected" : ""}>Admin</option>
                   </select>
                 </td>
-                <td><span class="badge ${u.activo === false ? "warning" : "success"}">${u.activo === false ? "Inactivo" : "Activo"}</span></td>
+                <td><span class="badge ${u.activo === false ? "warning" : "success"}">${u.activo === false ? ta("inactive") : ta("active")}</span></td>
                 <td>
                   <div class="inline-actions">
-                    <button class="btn-outline" data-toggle-user="${u.id}">${u.activo === false ? "Activar" : "Desactivar"}</button>
-                    <button class="btn-outline" data-view-history="${u.id}">Ver historia clínica</button>
-                    <button class="btn-outline" data-view-agenda="${u.id}">Ver agenda</button>
+                    <button class="btn-outline" data-toggle-user="${u.id}">${u.activo === false ? ta("enable") : ta("disable")}</button>
+                    <button class="btn-outline" data-view-history="${u.id}">${ta("viewClinicalRecord")}</button>
+                    <button class="btn-outline" data-view-agenda="${u.id}">${ta("viewAgenda")}</button>
                   </div>
                 </td>
               </tr>
@@ -140,7 +341,7 @@ function renderAdminUsuarios(container, { toast, navigate }) {
     const rol = container.querySelector("#nu-rol").value;
 
     if (!nombre || !email || !password) {
-      toast("Completa nombre, email y contraseña");
+      toast(ta("fillRequired"));
       return;
     }
 
@@ -173,7 +374,7 @@ function renderAdminUsuarios(container, { toast, navigate }) {
 
     list.push(newUser);
     rolesApi.saveUsuarios(list);
-    toast("Usuario creado");
+    toast(ta("userCreated"));
     renderAdminUsuarios(container, { toast, navigate });
   });
 
@@ -183,14 +384,14 @@ function renderAdminUsuarios(container, { toast, navigate }) {
       const user = users.find((u) => u.id === uid);
       const rol = sel.value;
 
-      const ok = confirm(`¿Estás seguro de cambiar el rol de ${user.nombre} a ${rol}?`);
+      const ok = confirm(ta("confirmRoleChange", { name: user.nombre, role: rol }));
       if (!ok) {
         sel.value = user.rol;
         return;
       }
 
       rolesApi.updateUserRole(uid, rol);
-      toast("Rol actualizado");
+      toast(ta("roleUpdated"));
       renderAdminUsuarios(container, { toast, navigate });
     });
   });
@@ -198,7 +399,7 @@ function renderAdminUsuarios(container, { toast, navigate }) {
   container.querySelectorAll("[data-toggle-user]").forEach((btn) => {
     btn.addEventListener("click", () => {
       rolesApi.toggleUserActive(Number(btn.dataset.toggleUser));
-      toast("Estado de cuenta actualizado");
+      toast(ta("accountUpdated"));
       renderAdminUsuarios(container, { toast, navigate });
     });
   });
@@ -208,7 +409,7 @@ function renderAdminUsuarios(container, { toast, navigate }) {
       const u = rolesApi.getUsuarios().find((x) => x.id === Number(btn.dataset.viewHistory));
       if (!u) return;
       if (u.rol !== "paciente") {
-        toast("Este usuario no tiene historia clínica de paciente");
+        toast(ta("noPatientRecord"));
         return;
       }
       navigate(`#/historia/${u.id}`);
@@ -219,7 +420,7 @@ function renderAdminUsuarios(container, { toast, navigate }) {
     btn.addEventListener("click", () => {
       const u = rolesApi.getUsuarios().find((x) => x.id === Number(btn.dataset.viewAgenda));
       if (!u || u.rol !== "medico") {
-        toast("Este usuario no tiene agenda médica");
+        toast(ta("noDoctorAgenda"));
         return;
       }
       localStorage.setItem("mc_admin_agenda_medico", String(u.id));
@@ -233,7 +434,7 @@ function renderAdminEspecialidades(container, { toast }) {
 
   container.innerHTML = `
     <section class="card">
-      <h2 class="section-title">Gestión de especialidades</h2>
+      <h2 class="section-title">${ta("specialtyManagement")}</h2>
 
       <div class="grid" style="margin-bottom:1rem;">
         ${list
@@ -242,11 +443,11 @@ function renderAdminEspecialidades(container, { toast }) {
           <div class="card" style="display:flex; justify-content:space-between; align-items:center; gap:0.6rem;">
             <div>
               <strong>${e.nombre}</strong>
-              <div><small>Icono: ${e.icono}</small></div>
+              <div><small>${ta("icon")}: ${e.icono}</small></div>
             </div>
             <label>
               <input type="checkbox" data-toggle-especialidad="${e.id}" ${e.activa ? "checked" : ""}/>
-              ${e.activa ? "Activa" : "Inactiva"}
+              ${e.activa ? ta("activeF") : ta("inactiveF")}
             </label>
           </div>
         `
@@ -255,12 +456,12 @@ function renderAdminEspecialidades(container, { toast }) {
       </div>
 
       <div class="card">
-        <h3>Agregar especialidad</h3>
+        <h3>${ta("addSpecialty")}</h3>
         <div class="grid grid-2">
-          <input id="esp-name" placeholder="Nombre de especialidad" />
-          <input id="esp-icon" placeholder="Icono Lucide (ej. stethoscope)" />
+          <input id="esp-name" placeholder="${ta("specialtyName")}" />
+          <input id="esp-icon" placeholder="${ta("specialtyIcon")}" />
         </div>
-        <button class="btn-primary" id="save-especialidad" style="margin-top:0.6rem;">Agregar</button>
+        <button class="btn-primary" id="save-especialidad" style="margin-top:0.6rem;">${ta("add")}</button>
       </div>
     </section>
   `;
@@ -272,7 +473,7 @@ function renderAdminEspecialidades(container, { toast }) {
       if (idx < 0) return;
       current[idx].activa = input.checked;
       saveEspecialidades(current);
-      toast("Especialidad actualizada");
+      toast(ta("specialtyUpdated"));
       renderAdminEspecialidades(container, { toast });
     });
   });
@@ -281,14 +482,14 @@ function renderAdminEspecialidades(container, { toast }) {
     const nombre = container.querySelector("#esp-name").value.trim();
     const icono = container.querySelector("#esp-icon").value.trim() || "stethoscope";
     if (!nombre) {
-      toast("Ingresa un nombre de especialidad");
+      toast(ta("specialtyNameRequired"));
       return;
     }
 
     const current = getEspecialidades();
     current.push({ id: `esp_${Date.now()}`, nombre, icono, activa: true });
     saveEspecialidades(current);
-    toast("Especialidad agregada");
+    toast(ta("specialtyAdded"));
     renderAdminEspecialidades(container, { toast });
   });
 }
