@@ -301,6 +301,15 @@
     { id: 15, fullName: "Dr. Andrés Salazar", specialty: "Pediatría", price: 98000, rating: 4.6, bio: "Control de crecimiento y desarrollo infantil." }
   ];
 
+  const CONTEXT_IMAGES = {
+    home: "./assets/images/hero-telemedicina.jpg",
+    search: "./assets/images/busqueda-especialistas.jpg",
+    profile: "./assets/images/perfil-medico.jpg",
+    urgent: "./assets/images/urgencias-telemedicina.jpg",
+    patientPanel: "./assets/images/panel-paciente.jpg",
+    doctorPanel: "./assets/images/panel-medico.jpg"
+  };
+
   window.addEventListener("DOMContentLoaded", init);
 
   async function init() {
@@ -599,11 +608,16 @@
   function renderHome() {
     document.getElementById("view").innerHTML = `
       <section class="hero">
-        <h1>${tr("homeTitle")}</h1>
-        <p>${tr("homeSubtitle")}</p>
-        <div class="inline-actions">
-          <a class="btn-primary" href="#/buscar">${tr("findSpecialist")}</a>
-          <a class="btn-danger" href="#/urgencias">${tr("urgentNow")}</a>
+        <div class="hero-split">
+          <div>
+            <h1>${tr("homeTitle")}</h1>
+            <p>${tr("homeSubtitle")}</p>
+            <div class="inline-actions" style="margin-top:0.8rem;">
+              <a class="btn-primary" href="#/buscar">${tr("findSpecialist")}</a>
+              <a class="btn-danger" href="#/urgencias">${tr("urgentNow")}</a>
+            </div>
+          </div>
+          <img class="context-media" src="${CONTEXT_IMAGES.home}" alt="Telemedicina con especialista" />
         </div>
       </section>
     `;
@@ -615,6 +629,7 @@
     view.innerHTML = `
       <section class="card">
         <h2 class="section-title">${tr("searchTitle")}</h2>
+        <img class="context-media" src="${CONTEXT_IMAGES.search}" alt="Búsqueda de especialistas médicos" style="margin:0.5rem 0 0.9rem;" />
         <div class="grid grid-3">
           <input id="f-nombre" placeholder="${tr("searchByName")}" />
           <select id="f-especialidad">
@@ -697,6 +712,7 @@
     view.innerHTML = `
       <section class="grid grid-2">
         <article class="card">
+          <img class="context-media" src="${CONTEXT_IMAGES.profile}" alt="Perfil médico profesional" style="margin-bottom:0.8rem;" />
           <div class="specialist-head">
             <img class="avatar" src="${getAvatar(sp.fullName)}" alt="${sp.fullName}" />
             <div><h2 class="section-title" style="margin:0;">${sp.fullName}</h2><p>${sp.specialty}</p></div>
@@ -814,7 +830,7 @@
   }
 
   function renderUrgencias() {
-  document.getElementById("view").innerHTML = `<section class="card"><h2 class="section-title">${tr("urgent")}</h2><div class="countdown" id="urgent-count">04:00</div><button class="btn-danger" id="launch-urgent">${tr("urgentNow")}</button></section><section class="card" style="margin-top:1rem;"><div id="urgent-jitsi-container"></div></section>`;
+  document.getElementById("view").innerHTML = `<section class="card"><h2 class="section-title">${tr("urgent")}</h2><div class="grid grid-2" style="align-items:center;"><div><div class="countdown" id="urgent-count">04:00</div><button class="btn-danger" id="launch-urgent">${tr("urgentNow")}</button></div><img class="context-media" src="${CONTEXT_IMAGES.urgent}" alt="Atención médica de urgencia" /></div></section><section class="card" style="margin-top:1rem;"><div id="urgent-jitsi-container"></div></section>`;
     startCountdown(240, "urgent-count");
     document.getElementById("launch-urgent").addEventListener("click", () => mountJitsi("urgent-jitsi-container", `MediConnect-Guardia-${Date.now()}`, `${tr("patient")} ${tr("urgent")}`));
   }
@@ -826,7 +842,7 @@
 
   function renderPanelPaciente(user) {
   const citas = agendaApi.getCitas().filter((c) => c.pacienteId === user.id && c.estado !== "cancelada");
-  document.getElementById("view").innerHTML = `<section class="card"><h2 class="section-title">${tr("patientPanel")}</h2><p>${tr("upcomingAppointments")}: <strong>${citas.length}</strong></p><div class="inline-actions"><a class="btn-outline" href="#/mi-historia">${tr("viewMyHistory")}</a><a class="btn-outline" href="#/buscar">${tr("scheduleNewAppointment")}</a></div></section><section class="card" style="margin-top:1rem;"><h3>${tr("myUpcomingAppointments")}</h3>${citas.map((c) => `<div class="card" style="margin-bottom:0.5rem;"><strong>${new Date(c.fechaInicio).toLocaleString()}</strong> · ${c.medicoNombre} · ${c.tipo} · ${c.estado}<div class="inline-actions" style="margin-top:0.4rem;"><button class="btn-outline" data-cancel-cita="${c.id}">${tr("cancel")}</button><button class="btn-outline" data-reschedule-cita="${c.id}">${tr("reschedule")}</button></div></div>`).join("") || `<p>${tr("noAppointments")}</p>`}</section><section class="grid grid-2" style="margin-top:1rem;"><article class="card"><canvas id="patient-line"></canvas></article><article class="card"><div id="clinic-map" style="height:300px;"></div></article></section>`;
+  document.getElementById("view").innerHTML = `<section class="card"><img class="context-media" src="${CONTEXT_IMAGES.patientPanel}" alt="Paciente en consulta remota" style="margin-bottom:0.8rem;" /><h2 class="section-title">${tr("patientPanel")}</h2><p>${tr("upcomingAppointments")}: <strong>${citas.length}</strong></p><div class="inline-actions"><a class="btn-outline" href="#/mi-historia">${tr("viewMyHistory")}</a><a class="btn-outline" href="#/buscar">${tr("scheduleNewAppointment")}</a></div></section><section class="card" style="margin-top:1rem;"><h3>${tr("myUpcomingAppointments")}</h3>${citas.map((c) => `<div class="card" style="margin-bottom:0.5rem;"><strong>${new Date(c.fechaInicio).toLocaleString()}</strong> · ${c.medicoNombre} · ${c.tipo} · ${c.estado}<div class="inline-actions" style="margin-top:0.4rem;"><button class="btn-outline" data-cancel-cita="${c.id}">${tr("cancel")}</button><button class="btn-outline" data-reschedule-cita="${c.id}">${tr("reschedule")}</button></div></div>`).join("") || `<p>${tr("noAppointments")}</p>`}</section><section class="grid grid-2" style="margin-top:1rem;"><article class="card"><canvas id="patient-line"></canvas></article><article class="card"><div id="clinic-map" style="height:300px;"></div></article></section>`;
 
     document.querySelectorAll("[data-cancel-cita]").forEach((btn) => {
       btn.addEventListener("click", () => {
@@ -863,7 +879,7 @@
 
   function renderPanelMedico(user) {
     const citas = agendaApi.getCitas().filter((c) => c.medicoId === user.id && c.estado !== "cancelada");
-    document.getElementById("view").innerHTML = `<section class="card"><h2 class="section-title">${tr("doctorPanel")}</h2><p>${tr("activeAppointments")}: <strong>${citas.length}</strong></p><div class="inline-actions"><a class="btn-outline" href="#/mi-agenda">${tr("manageAgenda")}</a><a class="btn-outline" href="#/mis-pacientes">${tr("viewAssignedPatients")}</a></div></section><section class="grid grid-2" style="margin-top:1rem;"><article class="card"><canvas id="doctor-line"></canvas></article><article class="card"><canvas id="doctor-donut"></canvas></article></section>`;
+    document.getElementById("view").innerHTML = `<section class="card"><img class="context-media" src="${CONTEXT_IMAGES.doctorPanel}" alt="Médico revisando su panel" style="margin-bottom:0.8rem;" /><h2 class="section-title">${tr("doctorPanel")}</h2><p>${tr("activeAppointments")}: <strong>${citas.length}</strong></p><div class="inline-actions"><a class="btn-outline" href="#/mi-agenda">${tr("manageAgenda")}</a><a class="btn-outline" href="#/mis-pacientes">${tr("viewAssignedPatients")}</a></div></section><section class="grid grid-2" style="margin-top:1rem;"><article class="card"><canvas id="doctor-line"></canvas></article><article class="card"><canvas id="doctor-donut"></canvas></article></section>`;
     state.chartInstances.push(new Chart(document.getElementById("doctor-line"), { type: "line", data: { labels: ["Ene", "Feb", "Mar", "Abr", "May"], datasets: [{ label: tr("consults"), data: [18, 22, 21, 28, 31], borderColor: "#1a73e8" }] } }));
     state.chartInstances.push(new Chart(document.getElementById("doctor-donut"), { type: "doughnut", data: { labels: [tr("videoConsultation"), tr("chat"), tr("onsite")], datasets: [{ data: [65, 20, 15], backgroundColor: ["#1a73e8", "#60a5fa", "#bfdbfe"] }] } }));
   }

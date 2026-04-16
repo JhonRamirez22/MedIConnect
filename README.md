@@ -21,6 +21,7 @@ Plataforma de telemedicina en **HTML + CSS + JavaScript vanilla** con enrutamien
 - `historia.js` → lectura/edición de historias clínicas
 - `agenda.js` → agenda médica, slots y citas
 - `admin.js` → dashboards y administración de usuarios/especialidades
+- `assets/images` → imágenes contextuales para hero, búsqueda, perfil, urgencias y paneles
 
 ## Persistencia en localStorage
 
@@ -45,3 +46,4 @@ Plataforma de telemedicina en **HTML + CSS + JavaScript vanilla** con enrutamien
 - No requiere backend ni instalación de dependencias.
 - Los adjuntos se simulan guardando solo nombre de archivo.
 - La videollamada usa Jitsi en modo embebido sin API key.
+- Las imágenes se descargaron desde Unsplash y se almacenan localmente en `assets/images`.
